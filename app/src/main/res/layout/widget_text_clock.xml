@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <TextClock
+        android:id="@+id/widgetTextClock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:format24Hour="HH:mm"
+        android:format12Hour="HH:mm"
+        android:textSize="38sp"
+        android:textStyle="bold"
+        android:textColor="#111827" />
+</LinearLayout>
