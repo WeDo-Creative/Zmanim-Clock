@@ -81,13 +81,13 @@ object ZmanimEngine {
             ZmanimMinhag.CHABAD -> when (event) {
                 ZmanEvent.ALOT_HASHACHAR -> cal.alosBaalHatanya
                 ZmanEvent.MISHEYAKIR -> cal.misheyakir10Point2Degrees
-                ZmanEvent.SUNRISE -> cal.sunriseBaalHatanya
+                ZmanEvent.SUNRISE -> cal.getSunriseOffsetByDegrees(AstronomicalCalendar.GEOMETRIC_ZENITH + 1.583)
                 ZmanEvent.SOF_ZMAN_SHMA -> cal.sofZmanShmaBaalHatanya
                 ZmanEvent.SOF_ZMAN_TEFILLAH -> cal.sofZmanTfilaBaalHatanya
                 ZmanEvent.CHATZOT -> cal.chatzos
                 ZmanEvent.MINCHA_GEDOLAH -> cal.minchaGedolaBaalHatanya
                 ZmanEvent.PLAG_HAMINCHA -> cal.plagHaminchaBaalHatanya
-                ZmanEvent.SUNSET -> cal.sunsetBaalHatanya
+                ZmanEvent.SUNSET -> cal.getSunsetOffsetByDegrees(AstronomicalCalendar.GEOMETRIC_ZENITH + 1.583)
                 ZmanEvent.TZEIT_HAKOCHAVIM -> cal.tzaisBaalHatanya
                 ZmanEvent.TZEIT_RT -> cal.tzais72
             }

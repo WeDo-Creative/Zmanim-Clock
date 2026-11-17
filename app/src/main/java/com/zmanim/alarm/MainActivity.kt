@@ -106,7 +106,7 @@ fun MainAppRoot() {
                 when (selectedTab) {
                     0 -> AlarmsTab(
                         modes = modes, alarms = alarms, settings = settings,
-                        onUpdateModes = { saveAll(modes = it) },
+                        onUpdateModes = { saveAll(newModes = it) },
                         onUpdateAlarms = { saveAll(newAlarms = it) },
                         onEditAlarm = { editingAlarm = it },
                         onOpenSettings = { showSettings = true }
